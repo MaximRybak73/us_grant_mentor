@@ -475,16 +475,16 @@ button{cursor:pointer}
 
     <div id="fbStage" class="mt-12 grid gap-8 lg:mt-16 lg:grid-cols-12 lg:gap-12">
       <div class="lg:col-span-4">
-        <div role="tablist" aria-label="Тип документа" class="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 pb-2 lg:mx-0 lg:flex-col lg:overflow-visible lg:px-0 lg:pb-0">
-          <button role="tab" id="tab-essay" data-tab="essay" aria-selected="true" aria-controls="panel-essay" class="fb-tab min-w-[250px] lg:min-w-0">
+        <div role="tablist" aria-label="Тип документа" class="no-scrollbar -mx-5 flex gap-2 overflow-x-auto overscroll-x-contain px-5 pb-2 lg:mx-0 lg:flex-col lg:overflow-visible lg:px-0 lg:pb-0">
+          <button role="tab" id="tab-essay" data-tab="essay" aria-selected="true" aria-controls="panel-essay" class="fb-tab min-w-[220px] lg:min-w-0">
             <span class="ico"><i data-lucide="pen-line" class="h-[18px] w-[18px]"></i></span>
             <span><span class="block text-[15.5px] font-semibold">Мотивационное эссе</span><span class="mt-0.5 block text-[13.5px] leading-snug">Туристическая мотивация вместо академической</span></span>
           </button>
-          <button role="tab" id="tab-cv" data-tab="cv" aria-selected="false" tabindex="-1" aria-controls="panel-cv" class="fb-tab min-w-[250px] lg:min-w-0">
+          <button role="tab" id="tab-cv" data-tab="cv" aria-selected="false" tabindex="-1" aria-controls="panel-cv" class="fb-tab min-w-[220px] lg:min-w-0">
             <span class="ico"><i data-lucide="file-text" class="h-[18px] w-[18px]"></i></span>
             <span><span class="block text-[15.5px] font-semibold">Резюме Harvard CV</span><span class="mt-0.5 block text-[13.5px] leading-snug">Список процессов вместо цифр</span></span>
           </button>
-          <button role="tab" id="tab-video" data-tab="video" aria-selected="false" tabindex="-1" aria-controls="panel-video" class="fb-tab min-w-[250px] lg:min-w-0">
+          <button role="tab" id="tab-video" data-tab="video" aria-selected="false" tabindex="-1" aria-controls="panel-video" class="fb-tab min-w-[220px] lg:min-w-0">
             <span class="ico"><i data-lucide="clapperboard" class="h-[18px] w-[18px]"></i></span>
             <span><span class="block text-[15.5px] font-semibold">Видеовизитка и интервью</span><span class="mt-0.5 block text-[13.5px] leading-snug">Чтение заученного текста с экрана</span></span>
           </button>
@@ -499,46 +499,46 @@ button{cursor:pointer}
               <div class="flex items-center gap-2 text-[13px] text-slate"><i data-lucide="message-square-text" class="h-4 w-4 text-emerald"></i>Комментарий Максима</div>
             </div>
 
-            <div class="min-h-[380px] px-5 py-7 sm:px-9 sm:py-10">
+            <div class="min-h-[380px] w-full max-w-full overflow-x-hidden px-5 py-7 sm:px-9 sm:py-10">
               <!-- Эссе -->
               <div class="fb-panel active" id="panel-essay" role="tabpanel" aria-labelledby="tab-essay" data-panel="essay" data-file="essay_draft_v2.docx">
                 <p class="text-[13px] font-medium text-slate">Как пишут многие</p>
-                <p class="serif mt-2 text-[1.2rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">«Я с детства мечтал увидеть США, подтянуть английский и познакомиться с новой культурой».</span></p>
+                <p class="serif mt-2 text-[1.05rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">«Я с детства мечтал увидеть США, подтянуть английский и познакомиться с новой культурой».</span></p>
                 <div class="fb-comment mt-6 flex gap-3.5 rounded-2xl border border-platinum bg-white p-4 sm:p-5">
                   <span class="serif relative grid h-10 w-10 flex-none place-items-center overflow-hidden rounded-full bg-ink text-[13px] text-white">МД<img data-photo="me" src="me.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" loading="lazy" width="40" height="40"></span>
                   <p class="text-[14.5px] leading-relaxed text-[#2c3b55]">Это мотивация туриста, и для комиссии она звучит как красный флаг. Покажи, какую задачу ты решаешь в своей сфере и как дисциплины американского вуза усилят твой проект после возвращения.</p>
                 </div>
                 <div class="fb-new-wrap mt-6">
                   <p class="text-[13px] font-medium text-emerald-deep">Как это может звучать</p>
-                  <p class="serif mt-2 text-[1.2rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">«Я развиваю [название проекта] в сфере [область]. Курс [предмет] в американском вузе даст мне [конкретный навык], которого не хватает, чтобы [результат для проекта дома]».</span></p>
+                  <p class="serif mt-2 text-[1.05rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">«Я развиваю [название проекта] в сфере [область]. Курс [предмет] в американском вузе даст мне [конкретный навык], которого не хватает, чтобы [результат для проекта дома]».</span></p>
                 </div>
               </div>
 
               <!-- Резюме -->
               <div class="fb-panel" id="panel-cv" role="tabpanel" aria-labelledby="tab-cv" data-panel="cv" data-file="harvard_cv_v3.docx">
                 <p class="text-[13px] font-medium text-slate">Как пишут многие</p>
-                <p class="serif mt-2 text-[1.2rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">Участвовал в студенческих мероприятиях, помогал организовывать проекты, учился на отлично.</span></p>
+                <p class="serif mt-2 text-[1.05rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">Участвовал в студенческих мероприятиях, помогал организовывать проекты, учился на отлично.</span></p>
                 <div class="fb-comment mt-6 flex gap-3.5 rounded-2xl border border-platinum bg-white p-4 sm:p-5">
                   <span class="serif relative grid h-10 w-10 flex-none place-items-center overflow-hidden rounded-full bg-ink text-[13px] text-white">МД<img data-photo="me" src="me.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" loading="lazy" width="40" height="40"></span>
                   <p class="text-[14.5px] leading-relaxed text-[#2c3b55]">Такая строка сливается с сотнями других анкет. В стандарте Harvard CV нужны глаголы действия и цифры: сколько человек в команде, какой масштаб, что изменилось благодаря тебе.</p>
                 </div>
                 <div class="fb-new-wrap mt-6">
                   <p class="text-[13px] font-medium text-emerald-deep">Как это может звучать</p>
-                  <p class="serif mt-2 text-[1.2rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">Организовал [N] мероприятий для [N] участников. Руководил командой из [N] человек. Результат: [измеримый итог].</span></p>
+                  <p class="serif mt-2 text-[1.05rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">Организовал [N] мероприятий для [N] участников. Руководил командой из [N] человек. Результат: [измеримый итог].</span></p>
                 </div>
               </div>
 
               <!-- Видео -->
               <div class="fb-panel" id="panel-video" role="tabpanel" aria-labelledby="tab-video" data-panel="video" data-file="video_script_v1.docx">
                 <p class="text-[13px] font-medium text-slate">Как делают многие</p>
-                <p class="serif mt-2 text-[1.2rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">Пишут сложный академический текст и монотонно читают его с ноутбука две минуты подряд.</span></p>
+                <p class="serif mt-2 text-[1.05rem] leading-[1.55] sm:text-[1.4rem]"><span class="fb-strike">Пишут сложный академический текст и монотонно читают его с ноутбука две минуты подряд.</span></p>
                 <div class="fb-comment mt-6 flex gap-3.5 rounded-2xl border border-platinum bg-white p-4 sm:p-5">
                   <span class="serif relative grid h-10 w-10 flex-none place-items-center overflow-hidden rounded-full bg-ink text-[13px] text-white">МД<img data-photo="me" src="me.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" loading="lazy" width="40" height="40"></span>
                   <p class="text-[14.5px] leading-relaxed text-[#2c3b55]">Комиссия ищет живых, адаптивных ребят, которые легко впишутся в американский кампус. Заменим сценарий тезисами: так звучит искренне, и ты не теряешься, если сбился. Ту же логику берём в подготовку к интервью.</p>
                 </div>
                 <div class="fb-new-wrap mt-6">
                   <p class="text-[13px] font-medium text-emerald-deep">Как это может звучать</p>
-                  <p class="serif mt-2 text-[1.2rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">Три-четыре тезиса вместо сценария, взгляд в камеру, живая интонация и точный тайминг в две минуты.</span></p>
+                  <p class="serif mt-2 text-[1.05rem] leading-[1.6] sm:text-[1.4rem]"><span class="fb-mark">Три-четыре тезиса вместо сценария, взгляд в камеру, живая интонация и точный тайминг в две минуты.</span></p>
                 </div>
               </div>
             </div>
