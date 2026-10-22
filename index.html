@@ -237,8 +237,7 @@ button{cursor:pointer}
     <a href="#top" class="flex min-w-0 items-center gap-3" aria-label="Максим Дубцов — на главную">
       <span class="serif grid h-10 w-10 flex-none place-items-center rounded-full bg-ink text-[15px] font-semibold text-white">МД</span>
       <span class="min-w-0 leading-tight">
-        <span class="block truncate text-[14.5px] font-semibold">Максим Дубцов</span>
-        <span class="hidden items-center gap-1.5 text-[12px] text-slate sm:flex"><i data-lucide="badge-check" class="h-3.5 w-3.5 text-emerald"></i>Финалист SPARK 2026</span>
+        <span class="block truncate text-[14.5px] font-semibold">US GRANT</span>
       </span>
     </a>
     <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Разделы страницы">
@@ -299,10 +298,6 @@ button{cursor:pointer}
         <a href="#formats" class="btn btn-ink magnetic h-14 px-7 text-[15px]">Выбрать формат работы</a>
         <a href="#feedback" class="btn btn-ghost h-14 px-7 text-[15px]">Посмотреть, как я разбираю заявки</a>
       </div>
-      <p class="hero-in mt-5 flex max-w-[34em] items-start gap-2.5 text-[13.5px] leading-relaxed text-slate" style="--d:740ms">
-        <i data-lucide="shield-check" class="mt-0.5 h-4 w-4 flex-none text-emerald"></i>
-        Каждый платёж подтверждается официальным чеком самозанятого. Оферта и политика обработки данных — открыты на этой странице.
-      </p>
     </div>
 
     <!-- Портрет в арке -->
@@ -355,7 +350,7 @@ button{cursor:pointer}
   </div>
 </section>
 
-<!-- ============================ ПОЛОСА ФАКТОВ ============================ -->
+<!-- ============================ ПОЛОСА ФАКТОВ ============================
 <section aria-label="Ключевые факты" class="border-y border-platinum/80 bg-white/60">
   <div class="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 px-5 sm:px-8 lg:grid-cols-4 lg:gap-x-0">
     <div class="rv flex items-start gap-3.5 py-6 lg:py-8 lg:pr-8">
@@ -372,7 +367,7 @@ button{cursor:pointer}
     </div>
     
   </div>
-</section>
+</section> -->
 
 <!-- ============================ МОЙ ПУТЬ ============================ -->
 <section id="story" class="py-20 sm:py-24 lg:py-32">
@@ -469,7 +464,7 @@ button{cursor:pointer}
     <div class="max-w-3xl">
       <h2 class="h2 rv">Так выглядит моя обратная связь</h2>
       <p class="lead rv mt-5 max-w-[40em]" style="--d:80ms">
-        Три главные ошибки, из-за которых сильные заявки теряются, и то, как я их исправляю. Это иллюстрации формата: работы участников я не публикую.
+        Три главные ошибки, из-за которых сильные заявки теряются, и то, как я их исправляю. Это иллюстрации формата:
       </p>
     </div>
 
@@ -699,7 +694,7 @@ button{cursor:pointer}
           <input id="promoInput" type="text" placeholder="Промокод из чата" class="h-11 min-w-0 flex-1 rounded-full border border-platinum bg-pearl px-4 text-[14px] uppercase tracking-wide placeholder:normal-case placeholder:tracking-normal focus:border-emerald focus:outline-none" maxlength="24">
           <button id="promoBtn" type="submit" class="btn btn-ink h-11 flex-none px-5 text-[13.5px]">Применить</button>
         </form>
-        <p id="promoMsg" class="mt-2.5 min-h-[1.2em] text-[12.5px] leading-snug text-slate" aria-live="polite">Для участников чата SPARK 2027: скидка 15% до 7 ноября.</p>
+        <p id="promoMsg" class="mt-2.5 min-h-[1.2em] text-[12.5px] leading-snug text-slate" aria-live="polite">Для участников SPARK 2027: скидка 15% до 7 ноября.</p>
       </div>
     </div>
 
@@ -803,7 +798,57 @@ button{cursor:pointer}
   </div>
 </section>
 
+<!-- ============================ ОТЗЫВЫ ============================ -->
+<section id="reviews" class="bg-mist py-20 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <h2 class="h2 rv">Что говорят мои ученики</h2>
+      <p class="lead rv mt-5 max-w-[38em]" style="--d:80ms">Несколько честных слов от ребят, которые уже воспользовались разбором.</p>
+    </div>
 
+    <div class="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-2">
+
+      <!-- Отзыв 1 — Уля -->
+      <figure class="rv rounded-[2rem] border border-platinum bg-white p-7 shadow-lux sm:p-9" style="--d:60ms">
+        <div class="flex items-center justify-between gap-3">
+          <figcaption class="flex items-center gap-3.5">
+            <span class="serif grid h-12 w-12 flex-none place-items-center rounded-full bg-emerald/10 text-[17px] font-semibold text-emerald-deep">У</span>
+            <span class="leading-tight">
+              <span class="serif block text-[16.5px] font-semibold">Уля</span>
+              <span class="mt-0.5 block text-[13px] text-slate">3 курс · Подача и разбор</span>
+            </span>
+          </figcaption>
+          <span class="tag bg-mist text-navy"><i data-lucide="send" class="h-3.5 w-3.5"></i>Telegram</span>
+        </div>
+        <blockquote class="serif mt-6 text-[1.1rem] leading-[1.6] text-ink sm:text-[1.2rem]">«Макс сразу дал нужные материалы, мы прям за вечер разобрали моё письмо, вообщем сэкономила много времени на поиск инфы и получила большую помощь».</blockquote>
+        <div class="mt-6 flex items-center justify-between border-t border-platinum/80 pt-5">
+          <span class="flex items-center gap-2 text-[13.5px] text-emerald-deep"><i data-lucide="check-circle-2" class="h-4 w-4"></i>Пакет документов готов</span>
+          <span class="flex gap-0.5 text-emerald" aria-label="Оценка 5 из 5"><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i></span>
+        </div>
+      </figure>
+
+      <!-- Отзыв 2 — Варвара -->
+      <figure class="rv rounded-[2rem] border border-platinum bg-white p-7 shadow-lux sm:p-9" style="--d:140ms">
+        <div class="flex items-center justify-between gap-3">
+          <figcaption class="flex items-center gap-3.5">
+            <span class="serif grid h-12 w-12 flex-none place-items-center rounded-full bg-emerald/10 text-[17px] font-semibold text-emerald-deep">В</span>
+            <span class="leading-tight">
+              <span class="serif block text-[16.5px] font-semibold">Варвара</span>
+              <span class="mt-0.5 block text-[13px] text-slate">2 курс · VIP · Полное ведение</span>
+            </span>
+          </figcaption>
+          <span class="tag bg-mist text-navy"><i data-lucide="send" class="h-3.5 w-3.5"></i>Telegram</span>
+        </div>
+        <blockquote class="serif mt-6 text-[1.1rem] leading-[1.6] text-ink sm:text-[1.2rem]">«Я прям рада!! Максим уделил мне довольно много времени на мои вопросы, начали готовить доки.».</blockquote>
+        <div class="mt-6 flex items-center justify-between border-t border-platinum/80 pt-5">
+          <span class="flex items-center gap-2 text-[13.5px] text-emerald-deep"><i data-lucide="check-circle-2" class="h-4 w-4"></i>Готовим документы</span>
+          <span class="flex gap-0.5 text-emerald" aria-label="Оценка 5 из 5"><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i></span>
+        </div>
+      </figure>
+
+    </div>
+  </div>
+</section>
 
 <!-- ============================ FAQ ============================ -->
 <section id="faq" class="border-t border-platinum/80 bg-white py-20 sm:py-24 lg:py-32">
@@ -813,11 +858,6 @@ button{cursor:pointer}
     </div>
     <div class="lg:col-span-8">
       <div class="divide-y divide-platinum border-y border-platinum">
-
-        <div class="faq-item">
-          <button type="button" class="faq-btn flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="serif text-[1.15rem] font-medium sm:text-[1.3rem]">Чем это отличается от курса с видеоуроками?</span><i data-lucide="plus" class="plus h-6 w-6 flex-none text-emerald"></i></button>
-          <div class="faq-body"><div><p class="pb-7 pr-10 text-[15.5px] leading-relaxed text-slate">Это личная работа. Я читаю твои черновики, отвечаю в Telegram и подстраиваю советы под твой профиль. Когда сто человек учатся по одному видео, их эссе начинают походить друг на друга, а комиссия замечает такие совпадения.</p></div></div>
-        </div>
 
         <div class="faq-item">
           <button type="button" class="faq-btn flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="serif text-[1.15rem] font-medium sm:text-[1.3rem]">Ты напишешь эссе и резюме за меня?</span><i data-lucide="plus" class="plus h-6 w-6 flex-none text-emerald"></i></button>
@@ -832,6 +872,11 @@ button{cursor:pointer}
         <div class="faq-item">
           <button type="button" class="faq-btn flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="serif text-[1.15rem] font-medium sm:text-[1.3rem]">Как проходит запись и оплата?</span><i data-lucide="plus" class="plus h-6 w-6 flex-none text-emerald"></i></button>
           <div class="faq-body"><div><p class="pb-7 pr-10 text-[15.5px] leading-relaxed text-slate">Нажимаешь «Записаться», принимаешь оферту и отдельно даёшь согласие на обработку данных, после чего открывается мой Telegram-бот. Оплата — 100% предоплатой переводом по реквизитам из бота.</p></div></div>
+        </div>
+        
+        <div class="faq-item">
+          <button type="button" class="faq-btn flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="serif text-[1.15rem] font-medium sm:text-[1.3rem]">Чем это отличается от курса с видеоуроками?</span><i data-lucide="plus" class="plus h-6 w-6 flex-none text-emerald"></i></button>
+          <div class="faq-body"><div><p class="pb-7 pr-10 text-[15.5px] leading-relaxed text-slate">Это личная работа. Я читаю твои черновики, отвечаю в Telegram и подстраиваю советы под твой профиль. Когда сто человек учатся по одному видео, их эссе начинают походить друг на друга, а комиссия замечает такие совпадения.</p></div></div>
         </div>
 
       </div>
@@ -864,7 +909,7 @@ button{cursor:pointer}
       <div class="md:col-span-5">
         <div class="flex items-center gap-3"><span class="serif grid h-10 w-10 place-items-center rounded-full bg-ink text-[15px] font-semibold text-white">МД</span><span class="serif text-[1.15rem] font-semibold">Максим Дубцов</span></div>
         <p class="mt-4 max-w-[30em] text-[13.5px] leading-relaxed text-slate">Авторский консультационный проект финалиста программы обмена 2026 года: личная проверка документов, подготовка к интервью и сопровождение до визы.</p>
-        <button type="button" data-book="general" class="btn btn-ink mt-5 h-11 px-5 text-[13.5px]"><i data-lucide="send" class="h-4 w-4"></i>Написать в Telegram</button>
+        <a href="https://t.me/MaxxximSergeevich" target="_blank" rel="noopener" class="btn btn-ink mt-5 h-11 px-5 text-[13.5px]"><i data-lucide="send" class="h-4 w-4"></i>Написать в Telegram</a>
       </div>
       <div class="md:col-span-3">
         <div class="font-semibold text-ink">Документы</div>
@@ -1478,7 +1523,7 @@ button{cursor:pointer}
         promoOn = false; input.disabled = false; input.value = ''; btn.textContent = 'Применить';
         setMsg('Промокод убран.', 'muted'); renderPrices();
       } else if (input.value.trim()) { apply(input.value); }
-      else { setMsg('Введи промокод из чата SPARK 2027.', 'err'); }
+      else { setMsg('Введи промокод.', 'err'); }
     });
     var q = new URLSearchParams(window.location.search).get('promo');
     if (q) apply(q);
